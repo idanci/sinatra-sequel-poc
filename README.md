@@ -9,4 +9,11 @@
 2. visit `http://localhost:9292`
 
 ### Debug
-1. `$ bundle exec irb -r irb/completion -r ./boot.rb`
+
+#### Interactive console:
+`$ bundle exec irb -r irb/completion -r ./boot.rb`
+
+#### Create some users via console:
+```ruby
+User.create(first_name: 'John', last_name: 'Smith', email_address: 'john.smith@example.com', country: 'United States')
+```

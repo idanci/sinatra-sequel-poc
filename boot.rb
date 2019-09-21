@@ -2,7 +2,7 @@ require 'sequel'
 
 Sequel::Model.plugin :json_serializer
 
-DB = Sequel.connect('postgres://localhost/users_api_dev')
+DB = Sequel.connect(ENV['DATABASE_URL'] || 'postgres://localhost/users_api_dev')
 
 Dir[File.expand_path('../models/**/*.rb', __FILE__)].each do |file|
   dirname = File.dirname(file)
