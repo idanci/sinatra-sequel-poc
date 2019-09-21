@@ -1,2 +1,2 @@
-require './api'
+require './boot'
 run Sinatra::Application

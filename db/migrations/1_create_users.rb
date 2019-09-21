@@ -6,7 +6,7 @@ Sequel.migration do
       String :first_name, null: false
       String :last_name, null: false
       String :email_address, null: false
-      String :country, null: false
+      String :country
     end
   end
 end
